@@ -1,25 +1,70 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BadgeIconPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNZ-D2-AR4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.69399056839999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="YID-qD-Z4r"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speechbubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="TKE-gP-W8g">
+                                <rect key="frame" x="145.5" y="224.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Uda-Bf-1dk"/>
+                                    <constraint firstAttribute="height" constant="30" id="sxK-cp-gtu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptn-Fm-KN7">
+                                <rect key="frame" x="165.5" y="219.5" width="15" height="15"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="brs-Gu-avC"/>
+                                    <constraint firstAttribute="width" constant="15" id="ex5-2z-G6z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TKE-gP-W8g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5iT-MJ-hzV"/>
+                            <constraint firstItem="VNZ-D2-AR4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="H9T-bR-kIW"/>
+                            <constraint firstItem="TKE-gP-W8g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IEv-yT-jmQ"/>
+                            <constraint firstItem="ptn-Fm-KN7" firstAttribute="top" secondItem="TKE-gP-W8g" secondAttribute="top" constant="-5" id="MAW-qB-7rB"/>
+                            <constraint firstAttribute="trailing" secondItem="VNZ-D2-AR4" secondAttribute="trailing" id="Y9w-Ws-tnc"/>
+                            <constraint firstItem="VNZ-D2-AR4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fmq-Tc-DSJ"/>
+                            <constraint firstItem="ptn-Fm-KN7" firstAttribute="trailing" secondItem="TKE-gP-W8g" secondAttribute="trailing" constant="5" id="knt-4k-yCo"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="badgelabel" destination="ptn-Fm-KN7" id="UMl-RU-Aue"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="340" y="274"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="speechbubble.png" width="50" height="50"/>
+    </resources>
 </document>

@@ -12,6 +12,8 @@
 		4DFEB8EA1FFA7F5A007927E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEB8E81FFA7F5A007927E4 /* Main.storyboard */; };
 		4DFEB8EC1FFA7F5A007927E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEB8EB1FFA7F5A007927E4 /* Assets.xcassets */; };
 		4DFEB8EF1FFA7F5A007927E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEB8ED1FFA7F5A007927E4 /* LaunchScreen.storyboard */; };
+		4DFEB8F71FFA80B0007927E4 /* calender.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEB8F61FFA80B0007927E4 /* calender.png */; };
+		4DFEB8F91FFA8390007927E4 /* speechbubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEB8F81FFA8390007927E4 /* speechbubble.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4DFEB8EB1FFA7F5A007927E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DFEB8EE1FFA7F5A007927E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DFEB8F01FFA7F5A007927E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DFEB8F61FFA80B0007927E4 /* calender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calender.png; sourceTree = "<group>"; };
+		4DFEB8F81FFA8390007927E4 /* speechbubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechbubble.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				4DFEB8E41FFA7F5A007927E4 /* AppDelegate.swift */,
 				4DFEB8E61FFA7F5A007927E4 /* ViewController.swift */,
+				4DFEB8F81FFA8390007927E4 /* speechbubble.png */,
+				4DFEB8F61FFA80B0007927E4 /* calender.png */,
 				4DFEB8E81FFA7F5A007927E4 /* Main.storyboard */,
 				4DFEB8EB1FFA7F5A007927E4 /* Assets.xcassets */,
 				4DFEB8ED1FFA7F5A007927E4 /* LaunchScreen.storyboard */,
@@ -123,7 +129,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DFEB8EF1FFA7F5A007927E4 /* LaunchScreen.storyboard in Resources */,
+				4DFEB8F71FFA80B0007927E4 /* calender.png in Resources */,
 				4DFEB8EC1FFA7F5A007927E4 /* Assets.xcassets in Resources */,
+				4DFEB8F91FFA8390007927E4 /* speechbubble.png in Resources */,
 				4DFEB8EA1FFA7F5A007927E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

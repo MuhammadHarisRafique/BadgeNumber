@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var badgelabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+       self.badgelabel.layer.cornerRadius = self.badgelabel.frame.width / 2
+        self.badgelabel.layer.masksToBounds = true
+        self.badgelabel.text = "21"
+        
     }
 
     override func didReceiveMemoryWarning() {
